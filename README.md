@@ -18,7 +18,7 @@ Les frameworks facilitent la vie du développeur, mais ils ont deux inconvénien
 
 Bootstrap, comme d'autres frameworks, fonctionne sur le principe d'une grille. Imaginez que votre page est divisée en 12 colonnes virtuelles. Vous allez définir la largeur de vos blocs par un nombre de colonnes. Lorsqu'un bloc de 5 colonnes et suivi d'un bloc de 4 colonnes, ils se mettent côte à côte. Si vous ajouter un bloc de 4 colonnes, le total de colonnes (5 + 4 + 4 = 13) dépasse 12, donc ce bloc ira à la ligne. Comme les colonnes sont relatives à la largeur de la page, votre site est responsif. Bien entendu, vous pouvez définir pour chaque bloc un nombre de colonnes différent en fonction de la largeur réelle de l'écran. De cette manière, votre site prendra l'aspect optimal sur tous les écrans.
 
-![http://www.geeksforgeeks.org/wp-content/uploads/boot.png](la grille)
+![la grille](http://www.geeksforgeeks.org/wp-content/uploads/boot.png)
 
 ## Les conteneurs
 
