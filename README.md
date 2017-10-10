@@ -158,6 +158,7 @@ Nom latin: Pygoscelis adeliae
 Originaire de: Antarctique
 Observé: Argentine, Australie, Nouvelle-Zélande
 Statut: Préoccupation mineure
-`
+
+```
 
 Pour ceux qui aura fini, adaptez votre code pour que ce ne soit plus un caroussel, mais [un système d'onglets verticaux](https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior)
