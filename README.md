@@ -95,7 +95,7 @@ A l'aide de Bootstrap, créez un diaporama défilant ([Caroussel](https://getboo
 
 Puis les caractéristiques de chaque manchot avec leur photo (elles sont dans le dossier /assets) : 
 
-`
+```yaml
 image: megellanic.svg
 Nom: Manchot de Magellan
 Nom latin: Spheniscus magellanicus
