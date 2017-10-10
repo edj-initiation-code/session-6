@@ -14,7 +14,7 @@ De plus, Bootstrap inclut également du code Javascript, pour rendre vos composa
 
 Les frameworks facilitent la vie du développeur, mais ils ont deux inconvénients. Il faut bien lire la documentation pour les utiliser au mieux (il est impossible de deviner quelle classe utiliser et il est souvent hasardeux de modifier leur code), et les sites faits avec le même frameworks se ressemblent beaucoup. Heureusement il est possible de personnaliser Bootstrap avec vos propres styles.
 
-# La grille
+## La grille
 
 Bootstrap, comme d'autres frameworks, fonctionne sur le principe d'une grille. Imaginez que votre page est divisée en 12 colonnes virtuelles. Vous allez définir la largeur de vos blocs par un nombre de colonnes. Lorsqu'un bloc de 5 colonnes et suivi d'un bloc de 4 colonnes, ils se mettent côte à côte. Si vous ajouter un bloc de 4 colonnes, le total de colonnes (5 + 4 + 4 = 13) dépasse 12, donc ce bloc ira à la ligne. Comme les colonnes sont relatives à la largeur de la page, votre site est responsif. Bien entendu, vous pouvez définir pour chaque bloc un nombre de colonnes différent en fonction de la largeur réelle de l'écran. De cette manière, votre site prendra l'aspect optimal sur tous les écrans.
 
@@ -29,6 +29,8 @@ Dans ce bloc, vous pouvez créer des lignes (.row), qui définissent des ensembl
 Puis dans ces lignes, vous pouvez enfin définir vos colonnes. Un bloc "automatique" aura la classe "col". Un bloc de deux colonnes aura la classe "col-2". Si ce même bloc doit prendre 4 colonnes sur un écran plus large, il aura en plus la classe "col-md-4".
 
 Tip : Il est bien sur possible d'ajouter plusieurs classes à un même élement. Celles-ci s'écrivent dans le même attribut class="", et sont séparées par des espaces.
+
+Dans chaque colonne, il est ensuite possible de refaire une grille, avec un bloc ".row", qui contiendra également 12 colonnes.
 
 ```html
 <main class="container">
@@ -84,3 +86,78 @@ Un petit bouton avec liste déroulante s'écrira donc :
   </div>
 </div>
 ```
+# Exercice
+
+A l'aide de Bootstrap, créez un diaporama défilant ([Caroussel](https://getbootstrap.com/docs/4.0/components/carousel/)) pour montrer les caractéristiques de 9 espèces de penguins. Votre page devra contenir : 
+
+- un titre : Reconnaitre un manchot
+- un sous-titre : Neuf espèces parmi les 18 existantes
+
+Puis les caractéristiques de chaque manchot avec leur photo (elles sont dans le dossier /assets) : 
+
+`
+image: megellanic.svg
+Nom: Manchot de Magellan
+Nom latin: Spheniscus magellanicus
+Originaire de: Argentine, Brésil, Chili, Pérou, Uruguay
+Observé: Antarctique, Australie, Nouvelle-Zélande
+Statut: Presque menacé
+
+image: humboldt.svg
+Nom: Manchot de Humboldt
+Nom latin: Spheniscus humboldti
+Originaire de: Chili, Pérou, Uruguay
+Observé: Colombie, Équateur
+Statut: Vulnérable
+
+image: emperor.svg
+Nom: Manchot empereur
+Nom latin: Aptenodytes forsteri
+Originaire de: Antarctique
+Observé: Argentine, Chili, Nouvelle-Zélande
+Statut: Presque menacé
+
+image: king.svg
+Nom: Manchot royal
+Nom latin: Aptenodytes patagonicus
+Originaire de: Argentine, Chili, Afrique-du-Sud
+Observé: Antarctique, Australie, Brésil, Nouvelle-Zélande, Uruguay
+Statut: Préoccupation mineure
+
+image: african.svg
+Nom: Manchot du Cap
+Nom latin: Spheniscus demersus
+Originaire de: Angola, Namibie, Afrique-du-Sud
+Observé: Congo, Gabon
+Statut: En danger
+
+image: chinstrap.svg
+Nom: Manchot à jugulaire
+Nom latin: Pygoscelis antarcticus
+Originaire de: Antarctique, Argentine, Chili
+Observé: Australie, Nouvelle-Zélande, Afrique-du-Sud
+Statut: Préoccupation mineure
+
+image: gentoo.svg
+Nom: Manchot papou
+Nom latin: Pygoscelis papua
+Originaire de: Antarctique, Argentine, Australie (île Macquarie), Chili
+Observé: Nouvelle-Zélande
+Statut: Préoccupation mineure
+
+image: rockhopper.svg
+Nom: Gorfou de Moseley
+Nom latin: Eudyptes moseleyi
+Originaire de: Îles de l'Atlantique-sud et Océan indien
+Observé: Îles Malouines, Afrique-du-Sud
+Statut: En danger
+
+image: adelie.svg
+Nom: Manchot Adélie
+Nom latin: Pygoscelis adeliae
+Originaire de: Antarctique
+Observé: Argentine, Australie, Nouvelle-Zélande
+Statut: Préoccupation mineure
+`
+
+Pour ceux qui aura fini, adaptez votre code pour que ce ne soit plus un caroussel, mais [un système d'onglets verticaux](https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior)
