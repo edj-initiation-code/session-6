@@ -35,7 +35,7 @@ Dans chaque colonne, il est ensuite possible de refaire une grille, avec un bloc
 ```html
 <main class="container">
   
-  <section class="row>
+  <section class="row">
     <article class="col-6"></article>
     <article class="col-4"></article>
     <article class="col-2"></article>
@@ -43,7 +43,7 @@ Dans chaque colonne, il est ensuite possible de refaire une grille, avec un bloc
     <article class="col-4"></article>
   </section>
   
-  <section class="row>
+  <section class="row">
     <article class="col-6"></article>
     <article class="col-4"></article>
     <article class="col-2"></article>
